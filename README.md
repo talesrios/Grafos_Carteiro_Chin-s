@@ -1,18 +1,45 @@
-## Getting Started
+# Problema do Carteiro Chinês (PCC) - Circuito Euleriano
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<img src="imgs/UNIFOR_logo1b.png" width="400">
 
-## Folder Structure
+## 📋 Sobre o Projeto
+Este projeto foi desenvolvido para a disciplina de **Resolução de Problemas com Grafos**, sob orientação do **Prof. Me. Ricardo Carubbi**. O objetivo é encontrar o caminho de custo mínimo que percorra todas as arestas de um dígrafo ponderado pelo menos uma vez, retornando ao ponto de origem.
 
-The workspace contains two folders by default, where:
+## 🧠 Metodologia Aplicada
+A resolução foi dividida em duas etapas fundamentais:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1.  **Eulerização Manual:** Análise detalhada do grafo original para identificar vértices desbalanceados ($d_{in} \neq d_{out}$). Foram adicionadas arestas baseadas em caminhos reais para tornar o grafo euleriano.
+2.  **Implementação Computacional:** Utilização do **Método de Hierholzer** para extrair o circuito euleriano a partir da instância balanceada.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Diferencial Técnico: Fidelidade Topológica
+Diferente de abordagens que utilizam "atalhos" ou arestas fictícias, esta implementação utiliza **16 arestas** para garantir que:
+* Apenas ruas existentes no mapa original fossem duplicadas.
+* O balanceamento dos vértices fosse absoluto, permitindo a execução correta do algoritmo.
+* O custo total de **284.00** representasse um trajeto real e executável.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 📊 Visualização dos Grafos
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### 1. Grafo Original
+Instância oficial utilizada como base para a identificação dos vértices desbalanceados.
+<br>
+<img src="imgs/graph.png" width="400">
+
+### 2. Grafo Eulerizado (Solução)
+Visualização gerada via **Graphviz** onde as arestas repetidas para eulerização são destacadas.
+<br>
+<img src="grafo_eulerizado.png" width="450">
+
+---
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+* Java JDK 11 ou superior.
+* Biblioteca `algs4` no diretório `lib/`.
+
+### Comandos
+1. Compile o projeto:
+   ```bash
+   javac -d . src/Main.java lib/*.java
