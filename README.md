@@ -22,12 +22,12 @@ Diferente de abordagens que utilizam "atalhos" ou arestas fictícias, esta imple
 ### 1. Grafo Original
 Instância oficial utilizada como base para a identificação dos vértices desbalanceados.
 <br>
-<img src="imagens/grafo_original.png" width="400">
+<img src="src/imagens/grafo_original.png" width="400">
 
 ### 2. Grafo Eulerizado (Solução)
 Visualização gerada via **Graphviz** onde as arestas repetidas para eulerização são destacadas.
 <br>
-<img src="imagens/grafo_eulerizado.png" width="450">
+<img src="src/imagens/grafo_eulerizado.png" width="450">
 
 ---
 
