@@ -1,9 +1,7 @@
 # Problema do Carteiro Chinês (PCC) - Circuito Euleriano
 
-<img src="imgs/UNIFOR_logo1b.png" width="400">
-
 ## 📋 Sobre o Projeto
-Este projeto foi desenvolvido para a disciplina de **Resolução de Problemas com Grafos**, sob orientação do **Prof. Me. Ricardo Carubbi**. O objetivo é encontrar o caminho de custo mínimo que percorra todas as arestas de um dígrafo ponderado pelo menos uma vez, retornando ao ponto de origem.
+Este projeto foi desenvolvido para a disciplina de **Resolução de Problemas com Grafos**. O objetivo é encontrar o caminho de custo mínimo que percorra todas as arestas de um dígrafo ponderado pelo menos uma vez, retornando ao ponto de origem.
 
 ## 🧠 Metodologia Aplicada
 A resolução foi dividida em duas etapas fundamentais:
@@ -24,12 +22,12 @@ Diferente de abordagens que utilizam "atalhos" ou arestas fictícias, esta imple
 ### 1. Grafo Original
 Instância oficial utilizada como base para a identificação dos vértices desbalanceados.
 <br>
-<img src="imgs/graph.png" width="400">
+<img src="imagens/grafo_original.png" width="400">
 
 ### 2. Grafo Eulerizado (Solução)
 Visualização gerada via **Graphviz** onde as arestas repetidas para eulerização são destacadas.
 <br>
-<img src="grafo_eulerizado.png" width="450">
+<img src="imagens/grafo_eulerizado.png" width="450">
 
 ---
 
