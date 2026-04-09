@@ -64,4 +64,4 @@ Após a eulerização manual, onde foram duplicadas apenas arestas **existentes*
 
 
 
-LINK DO VÍDEO: 
+LINK DO VÍDEO: https://drive.google.com/drive/folders/1UR4UJZJOPaPyaDDZUapU8xDViAc74XnF?usp=sharing
