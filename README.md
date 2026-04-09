@@ -1,4 +1,4 @@
-# Problema do Carteiro Chinês (PCC) - Circuito Euleriano
+# Problema do Carteiro Chinês - Circuito Euleriano
 
 ## 📋 Sobre o Projeto
 Este projeto foi desenvolvido para a disciplina de **Resolução de Problemas com Grafos**. O objetivo é encontrar o caminho de custo mínimo que percorra todas as arestas de um dígrafo ponderado pelo menos uma vez, retornando ao ponto de origem.
